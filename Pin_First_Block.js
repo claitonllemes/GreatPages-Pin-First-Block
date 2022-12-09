@@ -1,8 +1,6 @@
-
-
-  // Name: Pin first Block for Greatpages. 
-  // Version: 1.0.0 
-  // Copyright© : Claiton Lemes | Alison Zigulich 
+// Name: Pin first Block for Greatpages. 
+// Version: 1.0.0 
+// Copyright© : Claiton Lemes | Alison Zigulich 
 
   window.addEventListener('scroll', function () {
     if ((window.pageYOffset || window.scrollY) > 0) {
