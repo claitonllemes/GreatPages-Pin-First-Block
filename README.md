@@ -1,2 +1,33 @@
 # GreatPages-Fix-First-Block
  
+```Html
+
+<script>
+  
+  // Name: Pin first Block for Greatpages. 
+  // Version: 1.0.0 
+  // Copyright© : Claiton Lemes | Alison Zigulich 
+
+  window.addEventListener('scroll', function () {
+    if ((window.pageYOffset || window.scrollY) > 0) {
+      $('#site div.gpc-b:nth-child(1)').css({
+        'position': 'fixed',
+        'z-index': '10000'
+      });
+      $('#site div.gpc-b:nth-child(2)').css({
+        'margin-top': $('#site div.gpc-b:nth-child(1)').height() + 'px'
+      });
+    } else {
+      $('#site div.gpc-b:nth-child(1)').css({
+        'position': 'initial',
+        'z-index': '10000'
+      });
+      $('#site div.gpc-b:nth-child(2)').css({
+        'margin-top': '0px'
+      });
+    }
+  }, false);
+  
+</script>
+
+```
